@@ -102,20 +102,6 @@ print math.degrees(math.pi/2)   # 弧度转换为角度
 print math.radians(90)          # 角度转换为弧度
 
 # Constant
-
 print math.pi                   # 圆周率 π 
 print math.e                    # 自然常数 e
 
-
-
-count = 100
-name = 'yerik'
-
-# String
-str = 'hello world'
-print 'str:',str
-print str[3]
-print str[0:2]
-print str[4:]
-print str+str
-print str*2
