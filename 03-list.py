@@ -54,7 +54,7 @@ print list1+list2
 list = ['a','b','c']       # 重复多次 List
 print list*3
 
-list = ['a','b','c']
+list = ['a','b','c']       # 判断元素是否存在
 print 'a' in list          # Return True
 
 
