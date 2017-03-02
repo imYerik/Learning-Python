@@ -167,7 +167,9 @@ print list
 list1 = [i for i in range(10)]
 list2 = [i for i in range(50,80)]
 list3 = [i for i in range(50,80,2)]
+listZero = [0 for i in range(10)]           # 元素全部为0的 List 
 print list1
 print list2
 print list3
+print listZero
 
