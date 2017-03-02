@@ -1,4 +1,5 @@
-# Learning-Python  
+# Learning-Python 
+# Version 2.7  
 
 01-number.py  
 02-string.py  
