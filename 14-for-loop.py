@@ -4,6 +4,10 @@
 
 
 # for loop
+
+for i in range(0,5):          # Similar with for(i=0;i<5;i++) in C/C++, but more simple
+    print i
+
 for letter in 'Hello Wolrd' :
     print letter
 
