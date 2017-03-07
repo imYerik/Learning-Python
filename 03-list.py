@@ -163,13 +163,28 @@ list[0][0] = 0
 print list
 
 
-#  通过 range 来生成 List
+#  通过列表解析的方式来生成 List
+
+'''
+列表解析格式：
+[expr for iter_var in iterable]
+[expr for iter_var in iterable if cond_expr]
+
+第一种语法：首先迭代iterable里所有内容，每一次迭代，都把iterable里相应内容放到iter_var中，再在表达式中应用该iter_var的内容，最后用表达式的计算值生成一个列表。
+第二种语法：加入了判断语句，只有满足条件的内容才把iterable里相应内容放到iter_var中，再在表达式中应用该iter_var的内容，最后用表达式的计算值生成一个列表。
+
+'''
+
 list1 = [i for i in range(10)]
 list2 = [i for i in range(50,80)]
 list3 = [i for i in range(50,80,2)]
+list4 = [i+1 for i in range(10)]
+list5 = [str.upper() for str in ['HELLO','worlD']]
 listZero = [0 for i in range(10)]           # 元素全部为0的 List 
 print list1
 print list2
 print list3
+print list4
+print list5
 print listZero
 
