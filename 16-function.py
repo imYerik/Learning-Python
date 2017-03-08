@@ -29,7 +29,7 @@ PrintHelloWorld('Hello World!')
 
 
 # 全局变量和局部变量
-
+# 示例一
 total = 0
 def sum( arg1, arg2):
 	total = arg1 + arg2
@@ -38,7 +38,15 @@ def sum( arg1, arg2):
 sum(10,20)
 print '全局变量 total = %d' %(total)
 
-
+# 示例二 global 关键字
+total = 0
+def sum( arg1, arg2):
+        global total            # 在函数内声明为全局变量，这样就可以使用函数外部命名空间的全局变量
+	total = arg1 + arg2
+	print 'global 全局变量 total = %d' %(total)
+	return total
+sum(10,20)
+print '全局变量 total = %d' %(total)
 
 '''
 参数传递
@@ -80,7 +88,7 @@ print '函数外的 mylist: %s' %(mylist)
 
 # 必备参数示例
 def PrintInfo1( name, number):
-	print ' 姓名：%s,编号：%d' %(name,number)
+	print '姓名：%s,编号：%d' %(name,number)
 
 PrintInfo1('Yerik',1000)
 #PrintInfo(1000,'Yerik')        # Error
